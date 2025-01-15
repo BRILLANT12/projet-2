@@ -7,10 +7,10 @@ public class Membre {
     private String ID;
 
     public Membre(String nom, String role, projet projet,String ID){
-        this.nom = "Jim";
+        this.nom = "JEAN BONHEUR BRILLANT  ";
         this.role = "assistant";
         this.projet = projet;
-        this.ID = "br@gmail.com";
+        this.ID = "jean@gmail.com";
     }
 
 
@@ -22,7 +22,7 @@ public class Membre {
     }
 
     public void setNom(String nom) {
-        this.nom = "Jim";
+        this.nom = "JEAN BONHEUR BRILLANT";
     }
 
     public String getRole() {
@@ -42,7 +42,7 @@ public class Membre {
     }
 
     public void setID(String ID) {
-        this.ID =" br@gmail.com";
+        this.ID =" jean@gmail.com";
     }
     public String getID(){
         return ID;

@@ -17,6 +17,13 @@ public class Gestiondeprojet extends Application {
         stage.show();
     }
 
+    public static void afficherInfosMembre(Membre membre) {
+        System.out.println("Nom: " + membre.getNom());
+        System.out.println("Role: " + membre.getRole());
+        System.out.println("Projet: " + membre.getProjet().getNom());
+        System.out.println("ID: " + membre.getID());
+    }
+
     public static void main(String[] args) {
 
         projet projet = new projet("projet");
@@ -40,15 +47,24 @@ public class Gestiondeprojet extends Application {
         projet1.setNom("projet java1");
         System.out.println("Nom du projet 1:" + projet1.getNom());
 
-        Membre membre = new Membre("Jim", "assistant", projet,"br@gmail.com");
-        membre.setNom("String Nom");
-        membre.setRole("String Role");
-        membre.setProjet(projet);
-        membre.setID("br@gmail.com");
+        Membre membre1 = new Membre("JEAN BONHEUR BRILLANT NGUEMA", "assistant", projet, "jean@gmail.com");
+        Membre membre2 = new Membre("RÉMI FOURES ", "Développeur", projet, "remi@gmail.com");
+        Membre membre3 = new Membre("MAEVA ESSOME", "Designer", projet, "maeva@gmail.com");
 
-        System.out.println("Nom:" + membre.getNom());
-        System.out.println("Role :" + membre.getRole());
-        System.out.println("projet:" + membre.getProjet().getNom());
+
+        //Affichage des informations des membres
+
+
+        System.out.println("Membre1:");
+        afficherInfosMembre(membre1);
+
+        System.out.println("\nMembre2:");
+        afficherInfosMembre(membre2);
+
+
+        System.out.println("\nMembre3:");
+        afficherInfosMembre(membre3);
+
 
         projet projet2 = new projet("projet 2");
         projet2.setNom("projet java2");
@@ -62,8 +78,6 @@ public class Gestiondeprojet extends Application {
         System.out.println("Nom:" + livrable.getNom());
         System.out.println("Date Limite :" + livrable.getDateLimite());
         System.out.println("Description:" + livrable.getDescription());
-
-
 
 
     }
