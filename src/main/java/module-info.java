@@ -1,10 +1,11 @@
-module com.example.br {
+module com.example.tabcalen {
     requires javafx.controls;
     requires javafx.fxml;
 
     requires org.controlsfx.controls;
-    requires com.dlsc.formsfx;
 
-    opens com.example.br to javafx.fxml;
-    exports com.example.br;
+    opens com.example.tabcalen to javafx.fxml;
+    exports com.example.tabcalen;
+    exports com.example.groupe;
+    opens com.example.groupe to javafx.fxml;
 }
