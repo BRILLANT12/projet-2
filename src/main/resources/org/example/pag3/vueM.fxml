@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.pag3.HelloController2">
+    <children>
+        <Button fx:id="nextache" layoutX="427.0" layoutY="14.0" mnemonicParsing="false" onAction="#créetache" prefHeight="9.0" prefWidth="159.0" text="rajouter tache">
+            <font>
+                <Font size="17.0" />
+            </font>
+        </Button>
+        <Text fx:id="titre" layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="employe du temps manager" />
+        <TableView fx:id="tableau" editable="true" fixedCellSize="3.0" layoutX="41.0" layoutY="100.0" prefHeight="200.0" prefWidth="200.0" tableMenuButtonVisible="true">
+            <columns>
+                <TableColumn fx:id="un" prefWidth="75.0" text="tache" />
+                <TableColumn fx:id="deux" prefWidth="100.0" text="date" />
+            </columns>
+            <columnResizePolicy>
+                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+            </columnResizePolicy>
+        </TableView>
+        <Button fx:id="exite" layoutX="534.0" layoutY="361.0" mnemonicParsing="false" onAction="#exite" text="exite" textFill="#d90202" />
+        <TextField fx:id="nom" layoutX="432.0" layoutY="75.0" promptText="nom" />
+        <TextField fx:id="identifient" layoutX="433.0" layoutY="127.0" promptText="ID" />
+        <TextField fx:id="date" layoutX="434.0" layoutY="175.0" promptText="date debut fin" />
+    </children>
+</AnchorPane>

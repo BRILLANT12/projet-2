@@ -6,7 +6,7 @@ import javafx.scene.control.*;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.text.Text;
 
-public class HelloController {
+public class HelloController3 {
     @FXML private Button exite;
     @FXML private Button fini;
     @FXML private Text texte;
