@@ -6,6 +6,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
@@ -13,13 +14,15 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 
 public class helloController1 {
-    @FXML private Button valider;
+    @FXML private Button validé;
+    @FXML private AnchorPane pane;
     @FXML private Button exite;
     @FXML private PasswordField nom;
     @FXML private PasswordField identifient;
     @FXML private Text titre;
-    @FXML
-    public void valider(ActionEvent event) {
+    Stage stage;
+
+    public void  valider (ActionEvent event) {
         if (identifient.contains(IDCHEK)){
             if (identifient.contains(Mid)
             try {
@@ -45,5 +48,9 @@ public class helloController1 {
         }
 
     }
-    public void exite (ActionEvent event) {}
+    public void exite(javafx.event.ActionEvent actionEvent) {
+        stage=(Stage) pane.getScene().getWindow();
+        System.out.println("vous avez quiter la page");
+        stage.close();
+    }
 }
