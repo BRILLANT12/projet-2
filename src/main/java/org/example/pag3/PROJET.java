@@ -5,13 +5,13 @@ import java.util.List;
 import java.util.Scanner;
 
 
-public class PROJET {
+public class PROJET extends Employe{
     private String nom;
     private String role;
     private String dateDebut;
     private String dateFin;
 
-    public PROJET(String nom, String role, String dateDebut, String dateFin) {
+    public PROJET( nom,  role, String dateDebut, String dateFin) {
         this.nom = nom;
         this.role = role;
         this.dateDebut = dateDebut;
