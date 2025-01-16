@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import com.gluonhq.charm.glisten.control.TextField?>
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.TableColumn?>
-<?import javafx.scene.control.TableView?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.pag3.HelloController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.pag3.HelloController">
    <children>
       <Button fx:id="exite" layoutX="534.0" layoutY="361.0" mnemonicParsing="false" onAction="#exite" text="exite" textFill="#f70505" />
-      <TextField fx:id="exofin" floatText="tache efectuer" layoutX="436.0" layoutY="34.0" />
+      <TextField fx:id="exofin" layoutX="436.0" layoutY="34.0" promptText="tache faite" />
       <Text fx:id="text" layoutX="14.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="emploi du temps de l employer:" />
       <TableView fx:id="tableau" layoutX="58.0" layoutY="51.0" prefHeight="322.0" prefWidth="324.0">
         <columns>
